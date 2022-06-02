@@ -27,3 +27,13 @@ puts(5%2)
 puts("Ternary Operator")
 puts(2<5?"2 is less than 5" : "5 is greater than 2")
 puts(2>5?"2 is less than 5" : "5 is greater than 2")
+
+puts("Comparision operators")
+puts("2==5", 2==5)
+puts("2!=5", 2!=5)
+puts("2>5", 2>5)
+puts("2<5", 2<5)
+puts("2>=5", 2>=5)
+puts("2<=5", 2<=5)
+puts("Range Operator")
+[*1..10].each{ |i| p i }
