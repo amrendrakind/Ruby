@@ -24,3 +24,6 @@ puts(2**5)
 puts("Modulus of 5 to  2")
 puts(5%2)
 
+puts("Ternary Operator")
+puts(2<5?"2 is less than 5" : "5 is greater than 2")
+puts(2>5?"2 is less than 5" : "5 is greater than 2")
