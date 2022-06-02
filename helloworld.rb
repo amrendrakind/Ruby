@@ -14,3 +14,13 @@ puts("Multiplication of 10 and 20")
 puts(10*20)
 puts("Division of 50 by 10")
 puts(50/10)
+
+puts("Exponential of 5 to the power  2")
+puts(5**2)
+
+puts("Exponential of 2 to the power  5")
+puts(2**5)
+
+puts("Modulus of 5 to  2")
+puts(5%2)
+
