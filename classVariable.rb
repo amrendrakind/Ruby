@@ -5,7 +5,7 @@ class States
         @@no_of_states+= 1
     end
     def display()
-        puts "State name #@state_name"
+        puts "State name #@states_name"
     end
     def total_no_of_states()
         puts "Total number of states written:#@@no_of_states"
@@ -20,3 +20,8 @@ third = States.new ("Maharashtra")
 third.total_no_of_states()
 fourth = States.new ("Pondichery")
 fourth.total_no_of_states()
+
+first.display()
+second.display()
+third.display()
+fourth.display()
