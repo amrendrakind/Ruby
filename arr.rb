@@ -9,3 +9,7 @@ z.select {|number| print number.to_s + " "  if number.even? }
 puts
 puts
 z.select {|number| print number.to_s + " "  if number.odd? }
+
+p z.methods
+p z
+p z.reverse
