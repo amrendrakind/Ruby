@@ -1,9 +1,9 @@
  users = [
-            {username: "rupam", password: "password1"},
-            {username: "nilesh", password: "password2"},
-            {username: "aarohi", password: "password3"},
+            {username: "Rupam", password: "password1"},
+            {username: "Nilesh", password: "password2"},
+            {username: "Aarohi", password: "password3"},
             {username: "Lalita", password: "password4"},
-            {username: "munni", password: "password5"}
+            {username: "Munni", password: "password5"}
          ]
 puts "Welcome to authenticator!!"
 
