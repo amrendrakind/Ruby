@@ -12,4 +12,3 @@ puts
 
 puts "This program will take input from the user and compare password"
 puts "If password is correct then, you will get back the user object"
-
