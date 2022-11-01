@@ -11,7 +11,7 @@
 
 ## Author
 
-👤 **Amrendra Kumar**
+👤 **Amrendra K**
 
 - GitHub: [@githubhandle](https://github.com/amrendrakind)
 - Twitter: [@twitterhandle](https://twitter.com/amrendrak_)
