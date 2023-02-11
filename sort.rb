@@ -3,3 +3,6 @@ print "#{myarray}\n"
 sortedarray = myarray.sort
 puts "After sorting"
 print "#{sortedarray}\n"
+puts "Reverse sorting"
+reversesort = myarray.sort.reverse
+print "#{reversesort}\n"
