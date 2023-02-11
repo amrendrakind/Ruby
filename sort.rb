@@ -6,3 +6,5 @@ print "#{sortedarray}\n"
 puts "Reverse sorting"
 reversesort = myarray.sort.reverse
 print "#{reversesort}\n"
+myarray = ["i", "love", "you"]
+puts myarray.include?("love")
