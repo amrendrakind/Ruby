@@ -18,3 +18,10 @@ pp user.values
 
 pp user.select {|k, v| v.is_a?(String)}
 pp user.select {|k, v| v.is_a?(Integer)}
+
+my_hash = {:bill => 34, :steve => 66, :eric => 6}
+pp my_hash.sort_by { |name, age| age}
+pp my_hash.sort_by { |name, age| age}.reverse
+
+my_hash = { :amrendra => {:name => "Amrednra", :age => 35}, :rohit => {:name => "Rohit", :age => 30}, :eric => {:name => "Eric", :age => 50} }
+pp my_hash.sort_by {|key, value| value[:age]}
