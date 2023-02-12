@@ -25,3 +25,21 @@ pp my_hash.sort_by { |name, age| age}.reverse
 
 my_hash = { :amrendra => {:name => "Amrednra", :age => 35}, :rohit => {:name => "Rohit", :age => 30}, :eric => {:name => "Eric", :age => 50} }
 pp my_hash.sort_by {|key, value| value[:age]}
+
+my_hash_1 = {:a => 10, :b => 20}
+my_hash_2 = {:c => 30, :d => 40}
+my_hash = my_hash_1.merge(my_hash_2)
+pp my_hash
+pp my_hash.keys
+pp my_hash.values
+my_hash.delete(:c)
+pp my_hash
+my_hash.delete(:d)
+pp my_hash
+my_hash = my_hash_1.merge(my_hash_2)
+pp my_hash
+pp my_hash.reject{|key, value| value<30}
+pp my_hash
+pp my_hash.has_value?(20)
+pp my_hash.has_key?(:c)
+pp my_hash.has_key?(:e)
