@@ -43,3 +43,16 @@ var1 = false
 
 puts !var1
 
+def is_truthy (var)
+    if var 
+        puts "The var #{var} is truthy!"
+    else
+        puts "The var #{var} is falsey!"
+    end
+end
+
+is_truthy(0)
+is_truthy(1)
+is_truthy(nil)
+is_truthy("")
+is_truthy (false)
