@@ -31,3 +31,36 @@ elsif its_raining
 else
     puts "It's nice outside, just don't forget to your wallet"
 end
+
+def can_purchase? (amount_in_bank, cost_of_item)
+    if amount_in_bank >= cost_of_item
+        return true
+    else
+        return false
+    end
+end
+can_purchase?(50, 30)
+
+bank_balance = 100
+cost_of_item = 200
+if can_purchase?(bank_balance, cost_of_item)
+    puts "You can purchase this item."
+else
+    puts "Sorry, you do not have enough money to buy this item."
+end
+
+def get_animal_sound(animal_type)
+    case animal_type
+        when :dog
+            "Woof"
+        when :cat
+            "Meow"
+        when :bird
+            "tweet"
+        else
+            nil
+    end
+end
+puts get_animal_sound(:dog)
+puts get_animal_sound(:bird)
+puts get_animal_sound("dog")
