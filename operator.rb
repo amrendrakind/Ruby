@@ -32,3 +32,14 @@ pp var1 || var2
 var1 = false
 var2 = false
 pp var1 || var2
+
+puts "NOT Operator"
+
+var1 = true
+
+puts !var1
+
+var1 = false
+
+puts !var1
+
