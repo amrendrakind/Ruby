@@ -60,3 +60,17 @@ is_truthy(true)
 is_truthy(false)
 is_truthy([1,2])
 is_truthy({:hi=>"there"})
+
+var1 = true and 1
+puts var1
+var2 = true && 2
+puts var2
+
+var1 = true or 1
+puts var1
+var2 = 5 || true
+puts var2
+
+var3 = false || nil
+puts var3
+
