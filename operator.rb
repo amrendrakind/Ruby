@@ -73,4 +73,3 @@ puts var2
 
 var3 = false || nil
 puts var3
-
