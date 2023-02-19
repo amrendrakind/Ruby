@@ -64,3 +64,23 @@ end
 puts get_animal_sound(:dog)
 puts get_animal_sound(:bird)
 puts get_animal_sound("dog")
+
+def guess_type(input)
+    case input
+        when String 
+            puts "It is string!"
+        when Integer
+            puts "It is a number!"
+        when Array
+            puts "It is a array!"
+        when Hash
+            puts "It is a hash!"
+        else
+            puts "Not sure what you passed"
+    end
+end
+
+guess_type(5)
+guess_type("5")
+guess_type ([1,2,3,])
+guess_type({foo: :bar})
