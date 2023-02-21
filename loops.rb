@@ -3,7 +3,7 @@ def mind_reader(range)
     puts "The magic number is #{magic_number}"
 end
 
-mind_reader(10)
+# mind_reader(10)
 
 def mind_reader(range)
     magic_number = rand(range)
@@ -16,4 +16,17 @@ def mind_reader(range)
     end
 end
 
-mind_reader(20)
+# mind_reader(20)
+
+def mind_reader
+    magic_number = 7
+    guess = nil
+    while guess !=magic_number
+        puts "Nope! Try again! " unless guess.nil?
+        print "Guess Magic Number "
+        guess = gets.chomp.to_i
+    end
+    puts "That is right guess."
+end
+
+mind_reader
