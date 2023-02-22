@@ -84,3 +84,7 @@ end while keep_looking == :yes
 
 puts "-----------Iterators and Enumerators---------------"
 
+[1,2,3,4,5].each do |i|
+    puts "My item is: #{i}"
+end
+
