@@ -94,3 +94,12 @@ parameters.each do |key, value|
     puts "#{key} has vlaue: #{value}"
 end
 
+order_queue = ["amrendra", "ravi", "suraj", "mohan", "pawan"]
+order_queue.each_with_index do |person, index|
+    puts "Processing order for #{person} at index: #{index}."
+    if index < order_queue.length - 1
+        puts "Next up is: #{order_queue[index+1]}."
+    else
+        puts "#{person} is last in queue."
+    end
+end
