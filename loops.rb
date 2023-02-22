@@ -30,3 +30,22 @@ def mind_reader
 end
 
 mind_reader
+
+puts "--------------------------"
+
+def mind_reader
+    magic_number = 7
+    max_guesses = 3
+    attempts = 1
+    guess = nil
+    while guess != magic_number do
+        puts "Nope! Try again! " unless guess.nil?
+        print "Guess Magic Number "
+        guess = gets.chomp.to_i
+        break if attempts >= max_guesses
+        attempts += 1
+    end
+    puts guess == magic_number ? "That is right guess!!!" : "You are out of guesses, try again later!"
+end
+
+mind_reader
