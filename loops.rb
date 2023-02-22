@@ -88,3 +88,9 @@ puts "-----------Iterators and Enumerators---------------"
     puts "My item is: #{i}"
 end
 
+parameters = {id: 1, email: "amrendrak.ind@gmail.com", first_name: "Amrendra", last_name: "Kumar"}
+
+parameters.each do |key, value|
+    puts "#{key} has vlaue: #{value}"
+end
+
