@@ -73,3 +73,12 @@ end
 
 mind_reader (44)
      
+puts "-----------Use of Symbol with loop---------------"
+
+keep_looking = :yes
+
+begin
+    print "Should we keep looking? "
+    keep_looking = gets.chomp.downcase.to_sym
+end while keep_looking == :yes
+
