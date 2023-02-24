@@ -111,3 +111,10 @@ parameters = {id: 1, email: "amrendrak.ind@gmail.com", first_name: "Amrendra", l
 parameters.each_with_index do |(key, value), index|
     puts "Keys: '#{key}' has a Value: '#{value}' at Index: '#{index}'"
 end
+
+puts "--------------Map and collect method---------------------"
+
+[1,2,3,4,5].map do |i|
+    print  i+2
+end
+
