@@ -104,3 +104,10 @@ order_queue.each_with_index do |person, index|
     end
 end
 
+puts "--------------Hash.each_with_index---------------------"
+
+parameters = {id: 1, email: "amrendrak.ind@gmail.com", first_name: "Amrendra", last_name: "Kumar"}
+
+parameters.each_with_index do |(key, value), index|
+    puts "Keys: '#{key}' has a Value: '#{value}' at Index: '#{index}'"
+end
