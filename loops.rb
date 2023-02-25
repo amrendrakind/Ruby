@@ -117,8 +117,8 @@ puts "--------------Map and collect method---------------------"
 [1,2,3,4,5].map do |i|
     print  i+2
 end
-
-puts "      "
+puts
+puts "---------------------------------"
 
 def with_sales_tax array
     array.map do |item|
@@ -134,4 +134,15 @@ end
 print new_prices
 puts
 
+puts "---------------------------------"
 
+def math array
+    first_item = array.shift
+    while (array.length>0)
+        second_item = array.shift
+        first_item = yield first_item, second_item
+    end
+    return first_item
+end
+
+puts math ([4,5,6]){|a,b| a+b}
