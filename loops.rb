@@ -146,3 +146,7 @@ def math array
 end
 
 puts math ([4,5,6]){|a,b| a+b}
+puts math ([4,5,6]){|a,b| a-b}
+puts math ([4,5,6]){|a,b| a*b}
+
+
