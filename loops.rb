@@ -149,4 +149,19 @@ puts math ([4,5,6]){|a,b| a+b}
 puts math ([4,5,6]){|a,b| a-b}
 puts math ([4,5,6]){|a,b| a*b}
 
+puts "---------------------------------"
 
+def math(array)
+    first_item = array.shift
+    while(array.length > 0) do
+        second_item = array.shift || 0
+        third_item = array.shift || 0
+        first_item = yield first_item, second_item, third_item
+    end
+    return first_item
+end
+
+puts math([3,4,5]){|a,b,c| a+b+c}
+puts math([3,4,5,6]){|a,b,c| a+b+c}
+puts math([3,4,5,6,7]){|a,b,c| a+b+c}
+puts math([3,4,5,6,7,8]){|a,b,c| a+b+c}
