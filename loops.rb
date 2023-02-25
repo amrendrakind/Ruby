@@ -126,9 +126,12 @@ def with_sales_tax array
     end
 end
 
-prices  = [5,25, "20", 3.75, "5,25"]
+prices  = [5,25, "20", 3.75, "5.25"]
 sales_tax = 0.25
 new_prices = with_sales_tax prices do |price|
     price*sales_tax
 end
-puts new_prices
+print new_prices
+puts
+
+
