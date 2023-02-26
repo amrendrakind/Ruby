@@ -165,3 +165,4 @@ puts math([3,4,5]){|a,b,c| a+b+c}
 puts math([3,4,5,6]){|a,b,c| a+b+c}
 puts math([3,4,5,6,7]){|a,b,c| a+b+c}
 puts math([3,4,5,6,7,8]){|a,b,c| a+b+c}
+
