@@ -28,3 +28,14 @@ header = {accept: "application/json"}
 params = []
 params << "date=#{Time.now}"
 get_data(url, header, params)
+
+puts "------------Duck Typing-------------"
+
+def log_items(myvar)
+    if myvar.kind_of?(Array) || myvar.kind_of?(Hash) || myvar.kind_of?(String)
+        puts "Logging item with length: #{myvar.length}"
+    end
+end
+
+log_items("Amrendra")
+
