@@ -39,3 +39,21 @@ end
 
 log_items("Amrendra")
 
+puts "------------Sending a Message-------------"
+
+array = [1,2,3,4,5]
+
+puts array.length
+puts array.send(:length)
+puts array.send("length")
+print array.send(:last, 2)
+puts
+
+puts "------------Using Send a Message-------------"
+
+def call_anything(object, method)
+    object.send(method)
+end
+puts call_anything([1,2,3], gets.chomp.to_sym)
+puts call_anything({a: 1, b:2}, gets.chomp.to_sym)
+
