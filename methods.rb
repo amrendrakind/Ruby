@@ -54,10 +54,10 @@ puts "------------Using Send a Message-------------"
 def call_anything(object, method)
     object.send(method)
 end
-puts call_anything([1,2,3], gets.chomp.to_sym)
-puts call_anything({a: 1, b:2}, gets.chomp.to_sym)
+# puts call_anything([1,2,3], gets.chomp.to_sym)
+# puts call_anything({a: 1, b:2}, gets.chomp.to_sym)
 
-puts "------------Using Math and Time-------------"
+puts "------------Using Math module------------"
 def use_math_sign x
     increment = 0.25
     while(x<10)
@@ -68,3 +68,22 @@ def use_math_sign x
 end
 
 use_math_sign -10
+
+puts "------------Using Time class-------------"
+t = Time.now
+print "Current date and time is : "
+puts t
+
+print "Time in Year is "
+puts t.year
+print "Time in Month is "
+puts t.month
+print "Time in Day is "
+puts t.day
+print "Time in Hour is "
+puts t.hour
+print "Time in Minute is "
+puts t.min
+print "Time in Second is "
+puts t.sec
+
