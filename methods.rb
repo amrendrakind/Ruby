@@ -57,3 +57,14 @@ end
 puts call_anything([1,2,3], gets.chomp.to_sym)
 puts call_anything({a: 1, b:2}, gets.chomp.to_sym)
 
+puts "------------Using Math and Time-------------"
+def use_math_sign x
+    increment = 0.25
+    while(x<10)
+        y = Math.sin(x)
+        puts "#{x} #{y}"
+        x += increment
+    end
+end
+
+use_math_sign -10
