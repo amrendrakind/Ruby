@@ -16,7 +16,7 @@ class User
     end
 
     def get_roles
-        @@roles
+        self.class.roles
     end
 end
 p User.roles
@@ -24,4 +24,3 @@ puts "-------------------"
 u = User.new("employee")
 p u.get_roles 
 puts "-------------------"
-
