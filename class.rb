@@ -121,14 +121,15 @@ class User
         @name = name
         @address = address
         @department = department
-        @department.users = self
+        @department.users << self
     end
 end
 
 class Company
+    require 'uri'
     attr_accessor :name, :url, :departments
     def initialize(name, url)
-        @name = company_name
+        @name = name
         @url = URI.parse(url)
     end
 
@@ -147,5 +148,17 @@ class Department
         @users ||= []
     end
 end
-
-# Need to resume it
+#Data Setup
+company = Company.new("Acme Inc", "https://example.com")
+sales = Department.new("Sales")
+engineering = Department.new("Engineering")
+bob = User.new("Bob Smith", "1 Main Steet", sales)
+mary = User.new("Mary Jane", "10 Independece Street", engineering)
+company.departments = [sales, engineering]
+#Method Invoking
+print company.users
+puts
+print sales.users
+puts
+print engineering.users
+puts
