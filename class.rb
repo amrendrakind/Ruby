@@ -176,3 +176,7 @@ puts "---------bob.department = engineering--------------"
 bob.department = engineering
 print company.users
 puts
+puts "----------------"
+puts engineering.users.map(&:name)
+puts "----------------"
+puts sales.users.map(&:name)
