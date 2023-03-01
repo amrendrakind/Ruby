@@ -116,12 +116,19 @@ puts "Full Name is " + u.full_name
 puts "-----------Modeling a Company's Organizational Chart Using Classes------------"
 
 class User
-    attr_accessor :name, :address, :department
+    attr_accessor :name, :address
+    attr_reader :department
     def initialize(name, address, department)
         @name = name
         @address = address
         @department = department
         @department.users << self
+    end
+
+    def department=(new_department)
+        @department.users.delete(self)
+        @department = new_department
+        department.users << self
     end
 end
 
@@ -156,9 +163,16 @@ bob = User.new("Bob Smith", "1 Main Steet", sales)
 mary = User.new("Mary Jane", "10 Independece Street", engineering)
 company.departments = [sales, engineering]
 #Method Invoking
+puts "-----------company.users------------"
 print company.users
 puts
+puts "----------sales.users-------------"
 print sales.users
 puts
+puts "-----------engineering.users------------"
 print engineering.users
+puts
+puts "---------bob.department = engineering--------------"
+bob.department = engineering
+print company.users
 puts
