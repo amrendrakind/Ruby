@@ -8,3 +8,52 @@ class User
         @address = address
     end
 end
+
+class Employee < User
+
+end
+
+class Manager < User
+
+end
+
+class Doctor
+
+end
+
+class Executive
+
+end
+
+emp_add = Employee.new("1. Main Street")
+puts emp_add.address
+
+puts "----------End of Basic Inheritance----------"
+
+class User
+    attr_accessor :first_name, :last_name, :address
+    def initialize(first_name, last_name, address)
+        @first_name = first_name
+        @last_name = last_name
+        @address = address
+    end
+    def label
+        "#{first_name} #{last_name}"
+    end
+end
+
+class Employee < User
+end
+
+emp_add = Employee.new("Amrendra", "Kumar", "Bimbisar Nagar")
+puts emp_add.label
+
+puts "----------End of Output for the inheritance of all variables and methods----------"
+
+class Employee < User
+    def label
+        "Employee: #{super}"
+    end
+end
+emp_add = Employee.new("Amrendra", "Kumar", "Bimbisar Nagar")
+puts emp_add.label
