@@ -57,3 +57,15 @@ class Employee < User
 end
 emp_add = Employee.new("Amrendra", "Kumar", "Bimbisar Nagar")
 puts emp_add.label
+
+puts "----------End of Output for the inheritance of all variables and methods calling by super----------"
+
+class Employee < User
+    def employee_email
+        "#{first_name}.#{last_name[0]}@example.com"
+    end
+end
+
+emp = Employee.new("Amrendra", "Kumar", "Bimbisar Nagar")
+emp.first_name = "Amrendra"
+puts emp.employee_email
