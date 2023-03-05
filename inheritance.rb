@@ -109,3 +109,14 @@ e = Employee1.new
 e.salary = 1000
 pp e.salary
 pp e.taxes
+
+puts "----------Different Ways to Call super----------"
+
+class Manager < Employee
+    attr_reader :department
+    def initialize(name, address, department)
+        @department = department
+        super(name, address)
+    end
+end
+
