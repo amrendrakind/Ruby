@@ -69,3 +69,27 @@ end
 emp = Employee.new("Amrendra", "Kumar", "Bimbisar Nagar")
 emp.first_name = "Amrendra"
 puts emp.employee_email
+
+puts "----------End of Calling by super----------"
+
+class User
+    attr_accessor :name, :address
+    def initialize(name, address)
+        puts "In User#initialize"
+        @name = name
+        @address = address
+    end
+end
+
+class Employee < User
+    attr_accessor :on_payroll
+    def initialize (name, address)
+        puts "In Employee#Initialize"
+        @on_payroll = true
+        super
+    end
+end
+
+e = Employee.new("Amrendra K", "Bimbisar Nagar")
+pp e
+
