@@ -112,11 +112,18 @@ pp e.taxes
 
 puts "----------Different Ways to Call super----------"
 
-class Manager < Employee
-    attr_reader :department
-    def initialize(name, address, department)
-        @department = department
-        super(name, address)
+class User
+    def initialize(name)
+        @name = name
     end
 end
 
+class Employee < User
+    def initialize(*)
+        @on_payroll = true
+        super
+    end
+end
+
+e = Employee.new("Amrendra K")
+pp e
