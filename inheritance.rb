@@ -93,3 +93,19 @@ end
 e = Employee.new("Amrendra K", "Bimbisar Nagar")
 pp e
 
+puts "----------End of Calling by super----------"
+
+class Company
+    def taxes
+        tax_rate = 0.15
+        salary*tax_rate
+    end
+end
+
+class Employee1 < Company
+    attr_accessor :salary
+end
+e = Employee1.new
+e.salary = 1000
+pp e.salary
+pp e.taxes
