@@ -35,3 +35,26 @@ class User
 end
 u = User.new
 u.call_each
+
+require 'digest'
+
+class User
+    def initialize(email)
+        @email = email
+    end
+
+    def ==(other)
+        self.unique_id == other.unique_id
+    end
+    
+    protected
+    def unique_id
+        Digest::MD5.hexdigest @email.downcase
+    end
+end
+
+u = User.new("test@example.com")
+u2 = User.new("foo@example.com")
+u3 = User.new("TesT#example.com")
+puts u == u2
+puts u == u3
