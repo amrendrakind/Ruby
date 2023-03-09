@@ -58,4 +58,4 @@ u2 = User.new("foo@example.com")
 u3 = User.new("TesT#example.com")
 puts u == u2
 puts u == u3
-
+puts u2 = u3
