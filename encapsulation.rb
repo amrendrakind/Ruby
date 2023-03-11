@@ -59,6 +59,3 @@ u3 = User.new("TesT#example.com")
 puts u == u2
 puts u == u3
 puts u2 = u3
-puts u == u2
-puts u == u3
-puts u2 = u3
