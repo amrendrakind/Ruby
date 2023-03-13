@@ -55,7 +55,26 @@ end
 
 u = User.new("test@example.com")
 u2 = User.new("foo@example.com")
-u3 = User.new("TesT#example.com")
+u3 = User.new("Test#example.com")
 puts u == u2
 puts u == u3
 puts u2 = u3
+
+class Admin < User
+end
+class Department
+    def initialize(name)
+        @name = name
+    end
+
+    protected
+    def unique_id
+        Digest::MD5.hexdigest @name.downcase
+    end
+end
+
+admin = Admin.new("admin@example.com")
+admin2 = Admin.new("test@example.com")
+puts u == admin
+puts u == admin2
+# puts u == sales
