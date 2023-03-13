@@ -78,3 +78,13 @@ admin2 = Admin.new("test@example.com")
 puts u == admin
 puts u == admin2
 # puts u == sales
+
+class User3
+    private
+    def launch_code
+        return "seupersecretlaunchcode"
+    end
+end
+
+u = User3.new
+puts u.send(:launch_code)
