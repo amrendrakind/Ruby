@@ -13,6 +13,8 @@ while attempts < 4
     users.each do |user|
         if user[:username] == username && user[:password] == password then
             puts user
+        else
+            puts "Credientials were not correct"
         end
     end
     puts "Press 'n' or 'N' to quit or any key to continue"
