@@ -47,3 +47,12 @@ pp my_hash.has_key?(:e)
 hash1 = {:a=>"1", :b=>"2", :c=>"Amrendra", :d=>"Kumar", :e=>5, :f=>6}
 
 pp hash1.select{|k,v| v.is_a?(String)}
+hash1[:g] = 7
+hash1[:h] = 8
+pp hash1
+
+hash1.delete(:e)
+pp hash1
+hash1[:e] = 5
+hash1.each{|k,v| hash1.delete(k) if v.is_a?(Integer)}
+pp hash1
