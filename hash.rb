@@ -43,3 +43,7 @@ pp my_hash
 pp my_hash.has_value?(20)
 pp my_hash.has_key?(:c)
 pp my_hash.has_key?(:e)
+
+hash1 = {:a=>"1", :b=>"2", :c=>"Amrendra", :d=>"Kumar", :e=>5, :f=>6}
+
+pp hash1.select{|k,v| v.is_a?(String)}
