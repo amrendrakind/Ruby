@@ -1,7 +1,7 @@
 require_relative 'crud'
 
 class Student
-    include Crud
+    prepend Crud
     attr_accessor :first_name, :last_name, :email, :username, :password
 
     def initialize(first_name, last_name, email, username, password)
