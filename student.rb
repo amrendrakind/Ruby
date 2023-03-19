@@ -19,6 +19,7 @@ class Student
 end
 
 amrendra = Student.new
+# amrendra.first_name("Amrendra")
 amrendra.first_name = "Amrendra K"
 puts amrendra
 puts amrendra.first_name
