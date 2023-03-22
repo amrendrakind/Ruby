@@ -26,3 +26,4 @@ p amrendra
 
 hashed_password = amrendra.create_hash_digest(amrendra.password)
 p hashed_password
+
