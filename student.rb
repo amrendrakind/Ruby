@@ -22,8 +22,8 @@ end
 amrendra = Student.new("Amrendra", "Kumar", "amrendrak.ind@gmail.com", "amrendrakind", "MyPassword")
 john = Student.new("John", "Kkenedy", "johnk.ind@gmail.com", "johnkind", "MyPassword")
 
-p amrendra
-
 hashed_password = amrendra.create_hash_digest(amrendra.password)
 p hashed_password
 
+hashed_password1 = john.create_hash_digest(john.password)
+p hashed_password1
