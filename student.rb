@@ -15,7 +15,7 @@ class Student
         @password = password
     end
     def to_s
-        "First Name: #{@first_name}, Last Name: #{last_name}, User Name: #{username}, Email address: #{email}"
+        "First Name: #{@first_name}, Last Name: #{@last_name}, User Name: #{@username}, Email address: #{@email}"
     end
 end
 
