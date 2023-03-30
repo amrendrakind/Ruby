@@ -28,4 +28,8 @@ first_unloaded = ch.unload
 print "The first suitcase off the plane... "
 
 puts first_unloaded.object_id
+second_unloaded = ch.unload
+print "The second suitcase off the plane... "
+
+puts second_unloaded.object_id
 
