@@ -33,3 +33,7 @@ print "The second suitcase off the plane... "
 
 puts second_unloaded.object_id
 
+third_unloaded = ch.unload
+print "The third suitcase off the plane... "
+
+puts third_unloaded.object_id
