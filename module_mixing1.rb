@@ -12,4 +12,5 @@ end
 
 obj = C.new
 puts obj.report
-
+ 
+ 
