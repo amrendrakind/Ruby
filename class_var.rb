@@ -37,3 +37,9 @@ Car.add_make("Ford")
 h = Car.new("Honda")
 f = Car.new("Ford")
 h2 = Car.new("Honda")
+
+h1 = Car.new("Honda")
+f2 = Car.new("Ford")
+h3 = Car.new("Honda")
+
+
