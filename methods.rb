@@ -92,9 +92,3 @@ print "Time in Minute is "
 puts t.min
 print "Time in Second is "
 puts t.sec
-
-puts t.hour
-print "Time in Minute is "
-puts t.min
-print "Time in Second is "
-puts t.sec
