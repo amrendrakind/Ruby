@@ -14,6 +14,10 @@ class Banner
   def -@
     @text.downcase
   end
+
+  def !@
+    @text.reverse
+  end
 end
 
 banner = Banner.new("I am living in USA!!!")
@@ -23,3 +27,6 @@ print "Normal sentence in upper case, "
 puts +banner
 print "Normal sentence in lower case, "
 puts -banner
+print "Normal sentence in reverse order, "
+puts !banner
+puts (not banner)
