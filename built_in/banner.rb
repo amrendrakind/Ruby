@@ -31,6 +31,3 @@ print "Normal sentence in reverse order, "
 puts !banner
 puts (not banner)
 
-print "Normal sentence in reverse order, "
-puts !banner
-puts (not banner)
