@@ -20,3 +20,6 @@ end
 acc = Account.new(20)
 acc += 5
 puts acc
+acc -= 10
+print "after adding 10 "
+puts acc
