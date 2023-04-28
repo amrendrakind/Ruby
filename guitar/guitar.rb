@@ -11,36 +11,39 @@ class Guitar
     @top_wood = top_wood
   end
 
-  def get_serial_number
 
+
+
+  def get_serial_number
+    @serial_number
   end
 
   def get_price
-
+    @price
   end
 
-  def set_price(price)
-
+  def set_price(new_price)
+    @price = new_price
   end
 
   def get_builder
-
+    @builder
   end
 
   def get_model
-
+    @model
   end
 
   def get_type
-
+    @type
   end
 
   def get_back_wood
-
+    @get_back_wood
   end
 
   def get_top_wood
-
+    @get_top_wood
   end
 
 end
