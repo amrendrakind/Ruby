@@ -20,3 +20,5 @@ end
 acc = Account.new(20)
 acc += 5
 puts acc
+acc += 5
+puts acc
