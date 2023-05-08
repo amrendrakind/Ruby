@@ -37,11 +37,3 @@ post_id
 edited boolean
 deleted_at
 
-user_post
-id
-user_id
-post_id
-edited boolean
-deleted_at
-
-
