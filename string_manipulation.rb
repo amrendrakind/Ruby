@@ -20,3 +20,5 @@ puts str
 str["great"] = "cool"
 puts str
 puts str[-1]
+puts abc = "a" + "b" + "c"
+puts abc
