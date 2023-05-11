@@ -23,3 +23,26 @@ print "Month is "
 puts DateTime.parse("2023-04-02").month
 print "Day is "
 puts DateTime.parse("2023-04-02").day
+puts str = "I am learing Ruby because it is great language"
+remove_str = 'language'
+puts str.chomp("#{remove_str}")  #removes variable strore in remove_str from last
+remove_str.replace("age")
+puts str.chomp("#{remove_str}")  #removes variable strore in remove_str from last
+puts str.delete('gtl')
+puts "azz".succ
+puts "100".to_i
+puts "100".to_i(17)
+puts "100".to_i(8)
+puts "100".oct
+puts "100".to_i(16)
+puts "100".hex
+puts "2".to_i(2)
+puts "abcd".object_id
+puts "abcd".object_id
+puts "abcd".object_id
+puts :abcd.object_id
+puts :abcd.object_id
+a= :abcd
+b= :abcd
+puts a.object_id
+puts b.object_id
