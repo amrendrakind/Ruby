@@ -42,7 +42,11 @@ puts "abcd".object_id
 puts "abcd".object_id
 puts :abcd.object_id
 puts :abcd.object_id
-a= :abcd
-b= :abcd
+a = :abcd
+b = :abcd
+c = :abcd
+d = :abcd
 puts a.object_id
 puts b.object_id
+puts c.object_id
+puts d.object_id
