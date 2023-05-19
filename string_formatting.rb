@@ -44,7 +44,5 @@ puts :abcd.object_id
 puts :abcd.object_id
 a = :abcd
 b = :abcd
-c = :abcd
-d = :abcd
 puts a.object_id
 puts b.object_id
