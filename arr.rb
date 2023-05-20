@@ -29,3 +29,6 @@ puts "Interting element at begining of array using unshift"
 pp arr.unshift(a)
 puts "Interting element at the end of array using push" 
 pp arr.push(b)
+arr1 = [1,2,3]
+arr2 = [5,6,7]
+pp arr1.concat(arr2)
