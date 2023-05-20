@@ -32,3 +32,4 @@ pp arr.push(b)
 arr1 = [1,2,3]
 arr2 = [5,6,7]
 pp arr1.concat(arr2)
+pp arr1.push(arr2)
