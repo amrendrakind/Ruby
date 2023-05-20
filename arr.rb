@@ -35,3 +35,4 @@ pp arr1.concat(arr2)
 pp arr1.push(arr2)
 pp arr1+arr2
 pp arr1.flatten
+pp arr1 *"-"
