@@ -36,5 +36,4 @@ pp arr1.push(arr2)
 pp arr1+arr2
 pp arr1.flatten
 pp arr1 *"-"
-pp arr1
 pp arr1.uniq
