@@ -56,3 +56,7 @@ pp hash1
 hash1[:e] = 5
 hash1.each{|k,v| hash1.delete(k) if v.is_a?(Integer)}
 pp hash1
+
+a1_hash = { "a"=>"One", "b"=>"Two", "c"=>"Three" }
+pp a1_hash
+pp a1_hash.invert
