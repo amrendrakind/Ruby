@@ -63,5 +63,5 @@ pp a1_hash.invert
 
 h1 = { "smith"=>"John", "Jones"=>"Jane" }
 h2 = { "smith"=>"Jim" }
-h3 = h1.merge(h2)
+h3 = h1.merge(h2,a1_hash)
 pp h3
