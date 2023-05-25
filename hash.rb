@@ -60,3 +60,8 @@ pp hash1
 a1_hash = { "a"=>"One", "b"=>"Two", "c"=>"Three" }
 pp a1_hash
 pp a1_hash.invert
+
+h1 = { "smith"=>"John", "Jones"=>"Jane" }
+h2 = { "smith"=>"Jim" }
+h3 = h1.merge(h2)
+pp h3
