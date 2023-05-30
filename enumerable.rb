@@ -4,5 +4,6 @@ pp a.select { |item| item < 10 }
 pp a.select { |item| item%2 == 0 }
 pp a.reject { |item| item%2 == 0 }
 
-colors = %w { red orrange yellow green blue indigo violet }
-
+colors = %w{ red orrange yellow green blue indigo violet }
+pp colors
+pp colors.grep(/o/) { |color| color.capitalize }
