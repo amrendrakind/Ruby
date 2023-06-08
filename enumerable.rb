@@ -7,5 +7,4 @@ pp a.reject { |item| item%2 == 0 }
 colors = %w{ red orrange yellow green blue indigo violet }
 pp colors
 pp colors.grep(/o/) { |color| color.capitalize }
-pp colors.grep(/or/) { |color| color.capitalize }
-pp colors.grep(/rr/) { |color| color.capitalize }
+
