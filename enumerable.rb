@@ -53,3 +53,8 @@ pp country_name.add?("France")
 c1 = country.map(&:upcase)
 pp c1
 pp c1.map!(&:capitalize)
+
+str = "aeiou"
+
+str.each_byte { |b| pp b }
+str.each_char { |c| p c }
