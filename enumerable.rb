@@ -30,4 +30,26 @@ end
 
 pp x.inject(0) { |sum, n| sum + n }
 
+r = 4..20
+pp r.begin
+pp r.end
+pp r.exclude_end?
+pp r.cover?(7)
+pp r.include?(15)
+pp r.include?(21)
 
+require 'set'
+country = ["India", "Canada", "United States", "United KIngdom", "France"]
+country_name = Set.new(country)
+
+pp country_name
+country_name << "Nepal"
+pp country_name
+country_name.delete("France")
+pp country_name
+pp country_name.add?("France")
+pp country_name.add?("France")
+
+c1 = country.map(&:upcase)
+pp c1
+pp c1.map!(&:capitalize)
