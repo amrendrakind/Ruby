@@ -28,4 +28,6 @@ colors.each_with_index do | color, i |
 	puts "Color number #{i+1} is #{color}"
 end
 
+pp x.inject(0) { |sum, n| sum + n }
+
 
