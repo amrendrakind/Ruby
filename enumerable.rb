@@ -21,3 +21,11 @@ x.each_slice(5){ |slice| p slice}
 x.each_cons(5){ |con| p con }
 x.reverse_each { |n| print "#{n*2} " }
 puts
+
+colors = %w{ red orrange yellow green blue indigo violet }
+
+colors.each_with_index do | color, i |
+	puts "Color number #{i+1} is #{color}"
+end
+
+
