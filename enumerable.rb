@@ -58,3 +58,6 @@ str = "aeiou"
 
 str.each_byte { |b| pp b }
 str.each_char { |c| p c }
+str = "abcdefghijklmnopqrstuvwxyz"
+str.each_byte { |b| pp b }
+str.each_char { |c| p c }
