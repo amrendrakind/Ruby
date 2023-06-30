@@ -7,4 +7,6 @@ e = Enumerator.new do |y|
 	end
 end
 
-pp e.take(2)
+pp a
+pp e.take(3)
+pp a
