@@ -10,3 +10,6 @@ end
 pp a
 pp e.take(3)
 pp a
+pp a
+pp e.take(3)
+pp a
