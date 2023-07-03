@@ -8,5 +8,5 @@ e = Enumerator.new do |y|
 end
 
 pp a
-pp e.take(3)
+pp e.take(2)
 pp a
